@@ -39,8 +39,8 @@ public class BasketCalculatorServiceTest {
     @Test
     public void testGetArticlePriceWhenCustomerIdIsNull() {
         // GIVEN
-        String articleId = "article-1";
-        BigDecimal price = new BigDecimal("34.29");
+        var articleId = "article-1";
+        var price = new BigDecimal("34.29");
         when(mockPriceRepository.findPriceByArticleId(articleId)).thenReturn(price);
 
         // WHEN
